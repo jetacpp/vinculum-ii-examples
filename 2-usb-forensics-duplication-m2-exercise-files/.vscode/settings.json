@@ -1,0 +1,8 @@
+{
+    "workbench.editor.enablePreview": false,
+    "files.associations": {
+        "simple-duplicator.h": "c",
+        "memory": "c",
+        "istream": "c"
+    }
+}
