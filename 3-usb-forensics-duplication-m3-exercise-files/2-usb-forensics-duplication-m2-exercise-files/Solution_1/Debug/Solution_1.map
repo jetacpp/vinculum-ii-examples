@@ -1,0 +1,61 @@
+Future Technology Devices International Limited (c) 2007-2010, All Rights Reserved
+
+
+CPU_CORE =   VC2, CPU_RAM_SIZE= 16 KB, CPU_ROM_SIZE=256 KB
+
+Linker Version  = V1.0.1 Loader Version =  V1.0.1
+Wed Mar 23 09:35:00 2016
+
+
+=================================================================================================================
+
+SEGMENT_MAP    
+=================================================================================================================
+
+Start Address                  Segment Name                   Segment Size
+=================================================================================================================
+
+0003c0 .text                          00000160cc
+01648c .dataFlash                     00000000a7
+000000 .dataRAM                       00000000a7
+0000a7 .bss                           0000000136
+0001dd .HeapRAM                       0000003a22
+
+=================================================================================================================
+
+SYMBOL_TABLE   
+=================================================================================================================
+
+SYM ADDRESS PUBLIC SYM NAME                SYM TYPE   MEM TYPE FILE NAME            SYM SIZE  
+NOTE:L=LABEL F=FUNCTION 0=FLASH and 1=RAM
+=================================================================================================================
+
+0043a main                           F              0 Simple-duplicator.obj 00181
+005bb usbhost_connect_state          F              0 Simple-duplicator.obj 000b6
+00671 fat_attach                     F              0 Simple-duplicator.obj 000e9
+0075a fat_detach                     F              0 Simple-duplicator.obj 0009b
+007f5 boms_attach                    F              0 Simple-duplicator.obj 00265
+00a5a boms_detach                    F              0 Simple-duplicator.obj 0009b
+00af5 open_drivers                   F              0 Simple-duplicator.obj 0002f
+00b24 attach_drivers                 F              0 Simple-duplicator.obj 00037
+00b5b close_drivers                  F              0 Simple-duplicator.obj 00015
+00b70 FatReadSector                  F              0 Simple-duplicator.obj 00145
+00cb5 FatWriteSector                 F              0 Simple-duplicator.obj 00145
+00dfa firmware                       F              0 Simple-duplicator.obj 00e92
+0001e led                            L              1 Simple-duplicator.obj 00005
+0002f st%FatReadSector%xfer          L              1 Simple-duplicator.obj 0001c
+0004b st%FatWriteSector%xfer         L              1 Simple-duplicator.obj 0001c
+000a7 hFAT_FILE_SYSTEM_1             L              1 Simple-duplicator.obj 00002
+000a9 hFAT_FILE_SYSTEM_2             L              1 Simple-duplicator.obj 00002
+000ab leds                           L              1 Simple-duplicator.obj 00001
+000ac hBOMS_1                        L              1 Simple-duplicator.obj 00002
+000ae hBOMS_2                        L              1 Simple-duplicator.obj 00002
+000b0 hTIMER_1                       L              1 Simple-duplicator.obj 00002
+000b2 semRead                        L              1 Simple-duplicator.obj 00005
+000b7 ledStep                        L              1 Simple-duplicator.obj 00002
+000b9 hUSBHOST_1                     L              1 Simple-duplicator.obj 00002
+000bb hUSBHOST_2                     L              1 Simple-duplicator.obj 00002
+000bd semWrite                       L              1 Simple-duplicator.obj 00005
+000c2 tcbFIRMWARE                    L              1 Simple-duplicator.obj 00002
+000c4 hGPIO_PORT_A                   L              1 Simple-duplicator.obj 00002
+1640e iomux_setup                    F              0 Simple-duplicator_iomux.obj 0007e
